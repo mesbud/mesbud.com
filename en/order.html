@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0B1220" />
+  <title>Order — LLC &quot;Modern Engineering Services&quot;</title>
+  <meta name="description" content="Consultation request: design, technical supervision, engineer‑consultant. Leave contacts — we’ll reply with an action plan." />
+
+  <link rel="canonical" href="https://mesbud.com/en/order.html" />
+  <link rel="alternate" hreflang="uk" href="https://mesbud.com/order.html" />
+  <link rel="alternate" hreflang="en" href="https://mesbud.com/en/order.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mesbud.com/order.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Order — LLC &quot;Modern Engineering Services&quot;" />
+  <meta property="og:description" content="Consultation request: design, technical supervision, engineer‑consultant. Leave contacts — we’ll reply with an action plan." />
+  <meta property="og:url" content="https://mesbud.com/en/order.html" />
+  <meta property="og:image" content="https://mesbud.com/assets/img/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="LLC MES" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Order — LLC &quot;Modern Engineering Services&quot;" />
+  <meta name="twitter:description" content="Consultation request: design, technical supervision, engineer‑consultant. Leave contacts — we’ll reply with an action plan." />
+  <meta name="twitter:image" content="https://mesbud.com/assets/img/og-image.png" />
+
+  <link rel="icon" href="../assets/img/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__text">
+        <span class="brand__name">LLC "MES"</span>
+        <span class="brand__tagline">Engineering services in construction</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="about.html">About</a>
+      <a href="projects.html">Our projects</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="order.html" aria-current="page">Order</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a class="btn btn--primary" href="order.html">
+        Order
+        <span class="icon" aria-hidden="true">→</span>
+      </a>
+
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="mobilePanel" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div class="mobile__panel container" id="mobilePanel" data-mobile-panel hidden>
+      <a href="about.html">About</a>
+      <a href="projects.html">Our projects</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="order.html">Order</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section">
+  <div class="container">
+    <div class="section__head reveal">
+      <div>
+        <div class="overline">Order</div>
+        <h1>Consultation request</h1>
+      </div>
+      <p>The request form helps detail your facility, clarifies key aspects and allows us to understand the specifics of service delivery.</p>
+    </div>
+
+    <div class="grid grid--2 order-grid">
+      <div class="card reveal">
+        <div class="card__body">
+          <h3 class="card__title">Our contacts</h3>
+          <p class="help">
+            Email: <a class="link" href="mailto:mes092019@gmail.com">mes092019@gmail.com</a><br/>
+            Details: EDRPOU 43231346, VAT payer, general taxation system<br/>
+            Location: Kyiv (travel across Ukraine after preliminary consultations)
+          </p>
+
+          <div style="height:12px"></div>
+
+          <div class="media">
+            <img src="../assets/img/ukraine-map-pro.svg" alt="Map of Ukraine" />
+          </div>
+
+          <p class="help" style="margin-top:10px">
+            We work across the entire territory of Ukraine.
+          </p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__body">
+          <h3 class="card__title">Describe the task</h3>
+
+          <form class="form" id="orderForm" data-endpoint="/api/order" data-turnstile-sitekey="0x4AAAAAACmJMwrZ8JNi4ty5">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" name="name" type="text" required placeholder="e.g., John Smith" />
+            </div>
+
+            <div class="field">
+              <label for="role">Role in the project</label>
+              <input id="role" name="role" type="text" placeholder="Client / Lead designer / Contractor" />
+            </div>
+
+            <div class="field">
+              <label for="company">Company / Registration No.</label>
+              <input id="company" name="company" type="text" placeholder="e.g., Energy of Ukraine LLC 12345678" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" required placeholder="name@company.com" />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+38 ..." />
+            </div>
+
+            <div class="field">
+              <label for="service">Service *</label>
+              <select id="service" name="service" required>
+                <option value="">Choose…</option>
+                <option>General design</option>
+                <option>Discipline/section design</option>
+                <option>Technical supervision</option>
+                <option>Engineer‑consultant</option>
+                <option>Engineering calculations</option>
+                <option>Expected cost estimation</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Short description of the facility and the task *</label>
+              <textarea id="message" name="message" required placeholder="Facility type, city, stage, deadline, what hurts…"></textarea>
+              <div class="help">Do not include sensitive details — a high‑level description is enough. NDA is possible.</div>
+            </div>
+
+            <button class="btn btn--primary" type="submit">Send request →</button>
+            <div id="formStatus" class="help" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <div class="brand" aria-label="Company contacts">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__name">LLC "Modern Engineering Services"</span>
+          <span class="brand__tagline">Design • Technical supervision • Engineer‑consultant</span>
+        </span>
+      </div>
+      <small>
+        Kyiv • Email: mes092019@gmail.com<br/>
+        Details: EDRPOU 43231346, VAT payer, general taxation system<br/>
+        We operate across Ukraine and the EU (upon request).
+      </small>
+      <small>© 2026 LLC "MES". All rights reserved.</small>
+    </div>
+
+    <div class="footer__links" aria-label="Quick links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="order.html">Order</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
